@@ -12,3 +12,7 @@
 .about-art{align-items:start}.about-art .woman-art{align-self:center}
 
 @media(max-width:740px){.list .cards,.list .app-card{grid-template-columns:minmax(0,1fr)}.outline-button{gap:12px}.list .row-actions{min-width:0}.header .nav{gap:10px}}
+
+/* Approved simplified homepage: no header navigation. */
+.developer-signature{display:flex;align-items:baseline;gap:8px}.developer-signature strong{font-size:20px;font-weight:500;color:#285247;font-family:Georgia,"Times New Roman",serif;letter-spacing:.2px}.paper .intro.airy{padding-top:28px!important}.paper .lower{padding-top:28px}.footer{align-items:baseline}
+.intro h1{font-style:italic;color:#203d38}.intro h1 .life-accent{color:#6d886f}.paper .catalog{padding-bottom:58px}.paper .lower{padding-top:38px}@media(max-width:740px){.paper .catalog{padding-bottom:42px}.paper .lower{padding-top:30px}}
