@@ -58,3 +58,7 @@ footer>span{flex-shrink:0}
 .viewer-image{width:100%;height:calc(100dvh - 140px);max-height:none}
 .viewer-stage.is-zoomed .viewer-image{height:auto;max-width:none}
 @media(max-width:620px){.viewer-image{height:calc(100dvh - 190px)}}
+
+/* Alternative download source in the application catalogue. */
+.download-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+.download-links>.text-link{font-size:14px}
