@@ -59,6 +59,17 @@ footer>span{flex-shrink:0}
 .viewer-stage.is-zoomed .viewer-image{height:auto;max-width:none}
 @media(max-width:620px){.viewer-image{height:calc(100dvh - 190px)}}
 
-/* Alternative download source in the application catalogue. */
-.download-links{display:flex;flex-direction:column;align-items:flex-start;gap:10px}
-.download-links>.text-link{font-size:14px}
+
+/* Matching download buttons for both stores. */
+.store-buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;width:100%}
+.store-button{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:12px 15px;border:1px solid transparent;border-radius:9px;color:#fff;font-size:16px;font-weight:700;line-height:1.35;text-decoration:none}
+.store-button span:first-child{white-space:nowrap}
+.store-button:hover{filter:brightness(.95);text-decoration:none}
+.store-rustore{background:#285f4e;border-color:#285f4e}
+.store-trashbox{background:#bda58f;border-color:#bda58f}
+.download-card-bottom{flex-direction:column;align-items:stretch;gap:14px}
+.download-card-bottom>.text-link{align-self:flex-end}
+.download-actions{align-items:flex-start;gap:17px}
+.download-actions .privacy-link{display:inline-block}
+@media(min-width:621px) and (max-width:1050px){.download-card-bottom .store-buttons,.download-actions .store-buttons{grid-template-columns:1fr}}
+@media(max-width:620px){.store-buttons{grid-template-columns:1fr}.store-button{width:100%}}
