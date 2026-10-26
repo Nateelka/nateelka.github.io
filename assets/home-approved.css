@@ -16,3 +16,5 @@
 /* Approved simplified homepage: no header navigation. */
 .developer-signature{display:flex;align-items:baseline;gap:8px}.developer-signature strong{font-size:20px;font-weight:500;color:#285247;font-family:Georgia,"Times New Roman",serif;letter-spacing:.2px}.paper .intro.airy{padding-top:28px!important}.paper .lower{padding-top:28px}.footer{align-items:baseline}
 .intro h1{font-style:italic;color:#203d38}.intro h1 .life-accent{color:#6d886f}.paper .catalog{padding-bottom:58px}.paper .lower{padding-top:38px}@media(max-width:740px){.paper .catalog{padding-bottom:42px}.paper .lower{padding-top:30px}}
+/* Refine developer signature and forthcoming app status. */
+.developer-signature strong{font-size:17px}.health-card .status.pending{font-size:13px;font-weight:700;margin:7px 0 0;color:#805538}.health-card .status.pending::before{content:none}
