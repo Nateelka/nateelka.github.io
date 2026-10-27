@@ -1,18 +1,15 @@
-/* Shared consent notice: matches the warm, muted palette of the site. */
-.nc-consent,
-.nc-consent *{box-sizing:border-box}
-.nc-consent{position:fixed;z-index:1000;left:50%;bottom:14px;transform:translateX(-50%);width:min(760px,calc(100% - 28px));display:flex;align-items:center;gap:22px;padding:17px 19px;background:#fffefa;border:1px solid #d7dfd1;border-radius:15px;box-shadow:0 12px 35px rgba(31,53,45,.18);color:#203d38;font:14px/1.5 Arial,Helvetica,sans-serif}
-.nc-consent__content{min-width:0;flex:1}
-.nc-consent__title{font:600 17px/1.3 Georgia,"Times New Roman",serif;display:block;margin-bottom:5px}
-.nc-consent__content p{margin:0;color:#52645b;font:inherit;line-height:1.55}
+/* Compact, accessible consent bar that matches the site's palette. */
+.nc-consent,.nc-consent *{box-sizing:border-box}
+.nc-consent{position:fixed;z-index:1000;left:50%;bottom:12px;transform:translateX(-50%);width:min(850px,calc(100% - 24px));display:flex;align-items:center;gap:15px;padding:8px 13px;background:#fffefa;border:1px solid #d7dfd1;border-radius:10px;box-shadow:0 7px 24px rgba(31,53,45,.15);color:#203d38;font:13px/1.4 Arial,Helvetica,sans-serif}
+.nc-consent__content{flex:1;min-width:0}
+.nc-consent__content p{margin:0;color:#52645b;font:inherit}
 .nc-consent__content a{color:#285f4e;text-decoration:underline;text-underline-offset:2px}
 .nc-consent__content a:hover{text-decoration-thickness:2px}
-.nc-consent__status{margin-top:6px!important;font-size:12px!important}
-.nc-consent__actions{display:flex;flex-direction:column;gap:8px;min-width:145px}
-.nc-consent__button{appearance:none;border:1px solid #285f4e;border-radius:9px;padding:10px 13px;min-height:40px;font:600 13px/1.3 Arial,Helvetica,sans-serif;cursor:pointer;white-space:nowrap}
+.nc-consent__actions{display:flex;flex:0 0 auto;flex-direction:row;gap:7px}
+.nc-consent__button{appearance:none;border:1px solid #285f4e;border-radius:7px;min-height:36px;min-width:94px;padding:8px 11px;font:600 12px/1.3 Arial,Helvetica,sans-serif;cursor:pointer;white-space:nowrap}
 .nc-consent__button--allow{background:#285f4e;color:#fff}
 .nc-consent__button--allow:hover{background:#204c3e}
 .nc-consent__button--deny{background:#fffefa;color:#285f4e}
 .nc-consent__button--deny:hover{background:#eff3e9}
 .nc-consent__button:focus-visible,.nc-consent a:focus-visible{outline:3px solid #a37b54;outline-offset:3px}
-@media(max-width:650px){.nc-consent{bottom:8px;width:calc(100% - 16px);padding:14px 15px;display:block;max-height:70vh;overflow-y:auto}.nc-consent__actions{margin-top:12px;flex-direction:row}.nc-consent__button{flex:1;min-width:0;white-space:normal}}
+@media(max-width:650px){.nc-consent{bottom:8px;width:calc(100% - 16px);display:block;padding:10px 12px;max-height:65vh;overflow-y:auto}.nc-consent__actions{justify-content:flex-end;margin-top:8px}.nc-consent__button{min-height:36px;min-width:92px}}
