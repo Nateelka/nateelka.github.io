@@ -15,3 +15,6 @@
 .image-viewer button:hover{background:#456150d9}.viewer-close{right:20px;top:16px;font-size:31px}.viewer-prev{left:12px;top:calc(50% - 22px);font-size:38px}.viewer-next{right:12px;top:calc(50% - 22px);font-size:38px}
 .viewer-counter{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);font-size:14px;color:#fff}
 @media(max-width:740px){.image-viewer .viewer-stage{inset:60px 12px 46px}.image-viewer .viewer-image{max-width:100%;max-height:100%}.image-viewer .viewer-prev,.image-viewer .viewer-next{top:auto;bottom:4px;width:40px;height:36px;border:0;background:transparent}.image-viewer .viewer-prev{left:calc(50% - 94px)}.image-viewer .viewer-next{right:calc(50% - 94px)}.image-viewer .viewer-close{right:12px;top:10px}.viewer-counter{bottom:12px}}
+
+/* Third confirmed download source. */
+.appteka{background:#617664}.downloads{grid-template-columns:repeat(3,minmax(0,1fr));max-width:640px}@media(max-width:740px){.downloads{grid-template-columns:minmax(0,1fr);max-width:none}}
