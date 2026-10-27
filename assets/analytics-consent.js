@@ -76,23 +76,14 @@
     panel.setAttribute("role", "region");
     panel.setAttribute("aria-label", "Управление аналитикой сайта");
 
-    var status = consent === "yes"
-      ? '<p class="nc-consent__status">Сейчас аналитика разрешена. Вы можете изменить выбор.</p>'
-      : consent === "no"
-        ? '<p class="nc-consent__status">Сейчас аналитика отключена. Вы можете изменить выбор.</p>'
-        : "";
-
     panel.innerHTML =
       '<div class="nc-consent__content">' +
-        '<strong class="nc-consent__title">Аналитика сайта</strong>' +
-        '<p>Мы используем Яндекс Метрику только с вашего согласия, чтобы понимать посещаемость и переходы в магазины приложений. Отказ не влияет на работу сайта. <a href="/site-privacy/">Подробнее в политике сайта</a>.</p>' +
-        status +
+        '<p>Яндекс Метрика помогает оценивать посещения сайта. Разрешить аналитику? <a href="/site-privacy/">Подробнее</a></p>' +
       '</div>' +
       '<div class="nc-consent__actions">' +
+        '<button type="button" class="nc-consent__button nc-consent__button--deny" data-nc-no>Отклонить</button>' +
         '<button type="button" class="nc-consent__button nc-consent__button--allow" data-nc-yes>Разрешить</button>' +
-        '<button type="button" class="nc-consent__button nc-consent__button--deny" data-nc-no>Не разрешать</button>' +
       '</div>';
-
     panel.querySelector("[data-nc-yes]").addEventListener("click", function () {
       choose("yes");
     });
