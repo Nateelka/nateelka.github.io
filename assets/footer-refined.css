@@ -130,4 +130,22 @@ footer.wrap .developer-signature strong {
     line-height:1.4;
     white-space:nowrap;
   }
+
+  /* Subtle in-between separators without changing link font sizes or labels. */
+  footer.wrap.footer-inline-mobile .footer-links {
+    column-gap:6px;
+  }
+  footer.wrap.footer-inline-mobile .footer-links > a + a {
+    position:relative;
+  }
+  footer.wrap.footer-inline-mobile .footer-links > a + a::before {
+    content:"";
+    position:absolute;
+    left:-4px;
+    top:50%;
+    height:12px;
+    border-left:1px solid #b8c1b7;
+    transform:translateY(-50%);
+    pointer-events:none;
+  }
 }
