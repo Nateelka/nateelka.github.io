@@ -73,9 +73,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 272px;
-    padding: 24px 19px;
-    gap: 14px;
+    min-height: 0;
+    padding: 18px 19px;
+    gap: 11px;
     text-align: center;
   }
   .donation-icon {
