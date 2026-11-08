@@ -30,3 +30,7 @@
 
 /* Three matching store buttons, with a compact wrapped layout. */
 .appteka{background:#617664}.list .store-buttons{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}.list .store-buttons .store-button{flex:0 0 calc((100% - 8px)/2);min-width:0}@media(max-width:740px){.list .store-buttons .store-button{flex-basis:100%}}
+
+/* Homepage cards: app downloads are on the app detail page; keep list rows compact. */
+@media (min-width:1101px){.list .app-card{grid-template-columns:230px minmax(0,1fr)}}
+.list .app-top .development-label{margin-top:6px;font-size:16px;line-height:1.35;padding:2px 0 2px 11px}
