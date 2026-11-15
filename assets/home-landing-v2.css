@@ -139,15 +139,31 @@ body, h1, h2, .brand-name {
   .site-shell > .wave-main { height: clamp(380px, 32.15vw, 463px); }
 }
 
+
 .support-card .donate {
   max-width: 100%;
-  padding: 8px 16px;
-  gap: 8px;
-  background: #17652e;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  min-height: 66px;
+  padding: 10px 18px 10px 12px;
+  gap: 12px;
+  border-radius: 16px;
+  background: #f4e9db;
+  color: #423428;
   text-decoration: none;
+  text-align: left;
 }
-.support-card .donate:hover { background: #115023; }
-.support-card .donate:focus-visible { outline: 2px solid #17652e; outline-offset: 3px; }
+.support-card .donate:hover { background: #efe0ce; }
+.support-card .donate:focus-visible { outline: 2px solid #805b44; outline-offset: 3px; }
+.donate-heart {
+  display: grid;
+  flex: 0 0 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 50%;
+  background: #fff5f3;
+  color: #bc4f77;
+  font-size: 26px;
+  line-height: 1;
+}
+.donate-copy { display: grid; gap: 3px; line-height: 1.25; }
+.donate-copy strong { font-size: 16px; }
+.donate-copy > span { font-size: 13px; color: #68564a; }
