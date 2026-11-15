@@ -138,3 +138,16 @@ body, h1, h2, .brand-name {
 @media (min-width: 1000px) {
   .site-shell > .wave-main { height: clamp(380px, 32.15vw, 463px); }
 }
+
+.support-card .donate {
+  max-width: 100%;
+  padding: 8px 16px;
+  gap: 8px;
+  background: #17652e;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.support-card .donate:hover { background: #115023; }
+.support-card .donate:focus-visible { outline: 2px solid #17652e; outline-offset: 3px; }
