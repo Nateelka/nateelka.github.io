@@ -50,3 +50,14 @@ a:hover{filter:brightness(.9)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
 .contact-link svg.external{width:23px;height:23px;flex:0 0 23px}
+
+/* Keep the botanical stems attached to the wave at every width. */
+@media(min-width:801px){
+.hero-block{transform:translate(-20px,-30px)}
+.plan-block{transform:translateX(-52px)}
+.health-block{transform:translateY(-27px)}
+}
+@media(min-width:801px) and (max-width:1150px){
+.hero-block{transform:translate(-12px,-22px)}
+.plan-block{transform:translateX(-22px)}
+}
