@@ -67,3 +67,45 @@ a:hover{filter:brightness(.9)}
 @media(max-width:520px){.hero-block h1{font-size:clamp(28px,7.7vw,36px)}.wave-sprig{opacity:.35}}
 
 @media(max-width:800px){.wave-sprig{display:none}}
+
+/* Layout from the final Figma frame. */
+body, h1, h2, .brand-name {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+}
+.hero-block h1 { font-size: 36px; font-style: italic; line-height: 1.25; margin-bottom: 5px; }
+.hero-block .green-word { font-size: 35px; }
+.hero-block p { font-size: 18.6px; max-width: 395px; }
+.plan-content h2, .health-title h2, .about-block h2 { font-weight: 500; }
+.support-card { grid-row: 6; }
+.links-strip { grid-row: 7; }
+.page-footer { grid-row: 8; }
+
+@media (min-width: 1000px) {
+  .site-stage {
+    max-width: 1440px;
+    padding: 21px 0 30px;
+    grid-template-columns: repeat(100, minmax(0, 1fr));
+    grid-template-rows: minmax(216px, auto) minmax(172px, auto) minmax(197px, auto) minmax(205px, auto);
+  }
+  .wave-main { top: 169px; left: -.63%; height: auto; }
+  .hero-block { grid-area: 1 / 2 / 2 / 40; transform: none; }
+  .plan-block { grid-area: 2 / 40 / 3 / 93; transform: none; margin: 0; align-self: start; gap: 13px; }
+  .wallet-symbol { width: 114px; flex-basis: 114px; }
+  .plan-content p, .health-content p, .about-block p { font-size: 17px; }
+  .health-block { grid-area: 3 / 21 / 4 / 78; transform: none; margin: 0; align-self: start; gap: 18px; }
+  .health-icon { width: 71px; height: 68px; flex-basis: 71px; }
+  .about-block { grid-area: 4 / 27 / 5 / 61; margin: 0; padding: 30px 0 0; align-self: start; }
+  .about-block h2 { font-size: 40px; }
+  .developer-illustration { grid-area: 4 / 62 / 5 / 85; margin: 0; align-self: start; }
+  .support-card { grid-column: 21 / 81; margin-top: 0; }
+  .links-strip { grid-column: 13 / 88; margin-top: 125px; }
+  .page-footer { grid-column: 6 / 96; margin-top: 80px; }
+}
+@media (min-width: 801px) and (max-width: 999px) {
+  .support-card { grid-column: 3 / 11; }
+}
+@media (max-width: 800px) {
+  .wave-main { height: auto; top: 290px; }
+  .hero-block h1, .hero-block .green-word { font-size: clamp(28px, 7.7vw, 36px); }
+  .hero-block p { font-size: 16px; }
+}
