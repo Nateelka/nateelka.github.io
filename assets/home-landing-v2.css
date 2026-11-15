@@ -9,7 +9,7 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font: 17px/1.5 var(--serif);
+  font: 16px/1.5 var(--serif);
 }
 h1, h2, p { margin: 0; }
 a { color: inherit; text-underline-offset: .2em; }
@@ -24,8 +24,8 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   background: radial-gradient(ellipse at 45% 48%, #fffaf1, transparent 75%);
 }
 .site-stage {
-  max-width: 1360px;
-  padding: 38px 6% 25px;
+  max-width: 1460px;
+  padding: 30px 5% 22px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -40,8 +40,8 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   top: 6px;
   inset-inline: 0;
   width: 100%;
-  height: clamp(370px, 40vw, 570px);
-  object-fit: cover;
+  height: clamp(350px, 37vw, 510px);
+  object-fit: fill;
   object-position: center;
 }
 .wave-bottom { inset: auto 0 0; width: 100%; height: 144px; }
@@ -50,33 +50,45 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   aspect-ratio: 1;
   background: url("home-watercolor-sprig.webp") center / contain no-repeat;
 }
-.botanical-edge-top { top: 10px; left: -40px; transform: rotate(-23deg); opacity: .78; }
+.botanical-edge-top { top: 0; left: -27px; transform: rotate(-15deg); opacity: .78; }
 .botanical-edge-bottom { bottom: 49px; right: -45px; width: 132px; transform: scaleX(-1) rotate(-20deg); opacity: .61; }
 .hero-block { grid-area: 1 / 2 / 2 / 8; padding-bottom: 12px; }
-.hero-block h1 { font-size: clamp(36px, 4.5vw, 66px); line-height: 1.03; letter-spacing: -.025em; }
+.hero-block h1 { font-size: clamp(36px, 4.2vw, 61px); line-height: 1.03; letter-spacing: -.025em; }
 .hero-block h1 span { display: block; }
 .green-word { font-style: italic; }
 .hero-block p { max-width: 410px; margin-top: 16px; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.35; }
 .plan-block, .health-block { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); }
-.plan-block { grid-area: 2 / 7 / 3 / -1; margin-top: -40px; }
-.health-block { grid-area: 3 / 2 / 4 / 8; margin-top: 22px; }
+.plan-block { grid-area: 2 / 7 / 3 / -1; margin-top: -46px; }
+.health-block { grid-area: 3 / 2 / 4 / 8; margin-top: 15px; }
 .wallet-symbol, .health-icon {
   display: block;
-  width: clamp(77px, 9vw, 125px);
+  width: clamp(72px, 8vw, 108px);
   height: auto;
   aspect-ratio: 1;
   object-fit: contain;
 }
-.wallet-symbol { width: clamp(90px, 11vw, 153px); }
+.wallet-symbol { width: clamp(83px, 10vw, 138px); }
 .plan-content, .health-content { min-width: 0; }
-.plan-content h2, .health-title h2 { font-size: clamp(26px, 2.85vw, 42px); line-height: 1.12; }
+.plan-content h2, .health-title h2 { font-size: clamp(26px, 2.65vw, 38px); line-height: 1.12; }
 .plan-content p, .health-content p { margin-top: 6px; line-height: 1.4; }
-.plan-content a { display: inline-block; margin-top: 5px; font-weight: bold; color: var(--accent); }
+.plan-content h2 a { color: inherit; text-decoration: none; }
+.plan-content h2 a:hover { color: var(--accent); text-decoration: underline; }
+.plan-content h2 span { font-weight: normal; }
+.plan-content::after, .health-content::after {
+  content: "";
+  display: block;
+  width: 40%;
+  max-width: 145px;
+  height: 9px;
+  margin-top: 8px;
+  border-top: 2px solid #8b9e69;
+  border-radius: 50%;
+}
 .health-title { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 13px; }
 .pill { border-radius: 20px; padding: 3px 11px; background: #fae6d2; color: #683b22; font-size: 13px; white-space: nowrap; }
-.about-block { grid-area: 4 / 1 / 5 / 6; margin-top: 36px; }
-.about-block h2 { font-size: clamp(29px, 3.65vw, 52px); line-height: 1.1; margin-bottom: 14px; }
-.developer-illustration { grid-area: 4 / 6 / 5 / -1; margin: 6px -12px 0 0; }
+.about-block { grid-area: 4 / 1 / 5 / 6; margin-top: 18px; }
+.about-block h2 { font-size: clamp(29px, 3.5vw, 47px); line-height: 1.1; margin-bottom: 14px; }
+.developer-illustration { grid-area: 4 / 6 / 5 / -1; margin: -2px 0 0; width: min(100%, 690px); justify-self: end; }
 .developer-illustration img { display: block; width: 100%; height: auto; }
 .support-banner {
   grid-area: 5 / 1 / 6 / -1;
@@ -84,21 +96,20 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
   gap: clamp(12px, 2.4vw, 33px);
-  margin-top: 10px;
-  padding: clamp(17px, 2.3vw, 31px) clamp(20px, 5vw, 72px);
+  margin-top: 6px;
+  padding: clamp(15px, 1.8vw, 23px) clamp(20px, 4vw, 58px);
   border-radius: 38px;
   background:
-    radial-gradient(ellipse at 109% 119%, #b9c69e 0 27%, transparent 27.5%),
-    radial-gradient(ellipse at -12% 144%, #c4cfad 0 34%, transparent 34.5%),
+    url("home-support-wave.svg") center / 100% 100% no-repeat,
     linear-gradient(105deg, #ebebd4, #faf2e3 52%, #eeedd8);
 }
 .donate-heart {
-  color: #ba5a56;
-  font-size: clamp(35px, 5vw, 66px);
-  line-height: 1;
+  display: block;
+  width: clamp(86px, 15vw, 196px);
+  height: auto;
 }
 .donate-copy { display: grid; line-height: 1.25; gap: 3px; }
-.donate-copy strong { font-size: clamp(20px, 2.5vw, 34px); }
+.donate-copy strong { font-size: clamp(20px, 2.35vw, 31px); }
 .donate-copy > span { color: #594838; font-size: 15px; }
 .donate {
   display: inline-flex;
@@ -112,7 +123,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   background: #e2b6aa;
   color: #50241e;
   text-decoration: none;
-  font-size: clamp(17px, 2vw, 26px);
+  font-size: clamp(17px, 1.7vw, 24px);
 }
 .donate:hover { color: #50241e; background: #dba396; }
 .links-strip {
@@ -120,7 +131,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
-  margin: 22px 0 0;
+  margin: 16px 0 0;
 }
 .contact-link {
   display: flex;
@@ -141,7 +152,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   justify-content: space-between;
   align-items: center;
   gap: 10px 28px;
-  margin-top: 34px;
+  margin-top: 27px;
 }
 .brand-name { display: flex; align-items: center; gap: 8px; font-size: clamp(24px, 3vw, 38px); font-weight: bold; }
 .brand-name svg { width: 41px; height: 41px; }
@@ -174,6 +185,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .about-block { margin-top: 35px; }
   .developer-illustration { width: min(100%, 475px); align-self: center; margin: 13px 0 0; }
   .support-banner { grid-template-columns: auto minmax(0, 1fr); border-radius: 26px; }
+  .donate-heart { width: clamp(65px, 21vw, 115px); }
   .donate { grid-column: 2; justify-self: start; }
   .links-strip { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 18px; }
   .contact-link svg { width: 28px; height: 28px; }

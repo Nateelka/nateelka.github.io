@@ -1,17 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 540">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1374 520" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="sage" x2="1" y2=".45">
-      <stop stop-color="#729678" stop-opacity=".44"/>
-      <stop offset=".48" stop-color="#b4bd87" stop-opacity=".23"/>
-      <stop offset="1" stop-color="#879e6b" stop-opacity=".42"/>
+    <linearGradient id="sage" x2="100%" y2="32%">
+      <stop stop-color="#719378" stop-opacity=".49"/>
+      <stop offset=".53" stop-color="#b0ba89" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#94a678" stop-opacity=".39"/>
     </linearGradient>
-    <linearGradient id="olive" x2=".85" y2="1">
-      <stop stop-color="#b1bd81" stop-opacity=".53"/>
-      <stop offset=".6" stop-color="#9ba976" stop-opacity=".27"/>
-      <stop offset="1" stop-color="#738f68" stop-opacity=".54"/>
+    <linearGradient id="olive" x2="89%" y2="100%">
+      <stop stop-color="#b8bf8c" stop-opacity=".31"/>
+      <stop offset=".63" stop-color="#a2b276" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#6e936f" stop-opacity=".48"/>
     </linearGradient>
+    <filter id="paper" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".19" numOctaves="3" seed="7" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".19"/></feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+      <feBlend in2="SourceGraphic" mode="multiply"/>
+    </filter>
   </defs>
-  <path fill="url(#sage)" d="M0 219C214 211 403 397 718 399 984 401 1141 273 1440 272V368C1150 341 977 530 705 511 426 492 230 286 0 421Z"/>
-  <path fill="url(#olive)" d="M0 330C222 213 389 312 568 293 764 271 891 118 1127 62 1254 31 1351 30 1440 40V205C1315 102 1228 115 1126 139 917 186 814 325 558 337 329 347 178 248 0 431Z"/>
-  <path fill="url(#sage)" opacity=".66" d="M0 292C217 187 414 316 650 398 929 497 1125 334 1440 305V347C1129 317 940 538 638 432 379 340 225 235 0 388Z"/>
+  <g filter="url(#paper)">
+    <path fill="url(#sage)" d="M0 212C200 206 423 335 624 368S850 374 1020 318 1245 312 1374 269V357C1180 344 1015 459 831 475S555 536 403 499 151 318 0 419Z"/>
+    <path fill="url(#olive)" d="M0 304C204 187 399 310 550 306S752 184 947 124 1220 19 1374 36V179C1269 114 1208 79 1071 121S782 253 636 289 357 297 206 281 67 331 0 366Z"/>
+    <path fill="url(#sage)" opacity=".82" d="M0 292C181 214 303 243 458 310S730 455 930 406 1220 307 1374 321V350C1193 337 1076 417 890 442S605 409 444 351 159 239 0 381Z"/>
+  </g>
 </svg>
