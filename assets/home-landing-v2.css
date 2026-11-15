@@ -65,3 +65,5 @@ a:hover{filter:brightness(.9)}
 
 @media(min-width:521px) and (max-width:800px){.hero-block h1{font-size:38px}}
 @media(max-width:520px){.hero-block h1{font-size:clamp(28px,7.7vw,36px)}.wave-sprig{opacity:.35}}
+
+@media(max-width:800px){.wave-sprig{display:none}}
