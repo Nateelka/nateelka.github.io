@@ -87,7 +87,10 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   margin-top: 10px;
   padding: clamp(17px, 2.3vw, 31px) clamp(20px, 5vw, 72px);
   border-radius: 38px;
-  background: url("home-watercolor-wave.svg") center bottom / 100% 190% no-repeat, #f5f1df;
+  background:
+    radial-gradient(ellipse at 109% 119%, #b9c69e 0 27%, transparent 27.5%),
+    radial-gradient(ellipse at -12% 144%, #c4cfad 0 34%, transparent 34.5%),
+    linear-gradient(105deg, #ebebd4, #faf2e3 52%, #eeedd8);
 }
 .donate-heart {
   color: #ba5a56;
