@@ -284,3 +284,46 @@ body, h1, h2, .brand-name {
   .support-banner .donate-copy > span { font-size: 14px; }
   .support-banner .donate { grid-column: 2; justify-self: start; }
 }
+
+/* Botanical details sit behind the existing page content. */
+.botanical-edge {
+  position: absolute;
+  z-index: -1;
+  width: clamp(108px, 13vw, 195px);
+  aspect-ratio: 1;
+  pointer-events: none;
+  color: #a7c47d;
+  opacity: .35;
+  background: linear-gradient(36deg, transparent 49%, currentColor 49.6% 50.4%, transparent 51%) left bottom / 65% 48% no-repeat;
+}
+.botanical-edge::before, .botanical-edge::after {
+  content: "";
+  position: absolute;
+  width: 44%;
+  height: 45%;
+  background: linear-gradient(135deg, #bfd69c, #dbe8bd 70%, #acce85);
+  border-radius: 100% 0;
+}
+.botanical-edge::before { left: 17%; top: 22%; transform: rotate(-80deg); }
+.botanical-edge::after { left: 51%; top: 15%; transform: rotate(-8deg); }
+.botanical-edge-left { left: 0; top: 375px; }
+.botanical-edge-right { right: 0; top: 159px; transform: scaleX(-1); }
+.about-block h2::after {
+  content: "";
+  display: block;
+  width: 68px;
+  height: 12px;
+  margin-top: 4px;
+  background: url("home-sprig-v3.webp") center / contain no-repeat;
+  transform: rotate(65deg);
+  transform-origin: 30% center;
+  opacity: .55;
+}
+@media (max-width: 1199px) {
+  .botanical-edge-left { top: 335px; opacity: .22; }
+  .botanical-edge-right { top: 78px; opacity: .25; }
+}
+@media (max-width: 800px) {
+  .botanical-edge-left { display: none; }
+  .botanical-edge-right { top: 28px; width: 100px; opacity: .18; }
+}

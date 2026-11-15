@@ -2,9 +2,9 @@
 <path id="Vector" d="M0 462.923C126.562 334.022 229.688 242.11 365.625 225.297C515.625 207.363 585 40.3516 750 24.6593C926.25 6.72527 1031.25 109.846 1162.5 96.3956C1284.38 82.9451 1359.38 31.3846 1440 0V202.879C1348.12 255.56 1226.25 281.341 1095 316.088C937.5 362.044 793.125 414.725 637.5 394.549C450.938 372.132 328.125 334.022 206.25 358.681C106.875 378.857 45 419.209 0 462.923Z" fill="url(#paint0_linear_0_22)"/>
 <defs>
 <linearGradient id="paint0_linear_0_22" x1="0" y1="0" x2="131.844" y2="630.958" gradientUnits="userSpaceOnUse">
-<stop stop-color="#ECF2DF" stop-opacity="0.25"/>
-<stop offset="0.5" stop-color="#E3EFD0" stop-opacity="0.37"/>
-<stop offset="1" stop-color="#F2F6DE" stop-opacity="0.32"/>
+<stop stop-color="#EDF2D7" stop-opacity="0.55"/>
+<stop offset="0.5" stop-color="#D8E9BE" stop-opacity="0.61"/>
+<stop offset="1" stop-color="#F3F4DB" stop-opacity="0.46"/>
 </linearGradient>
 </defs>
 </svg>
