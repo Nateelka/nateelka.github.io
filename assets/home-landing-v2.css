@@ -51,13 +51,17 @@ a:hover{filter:brightness(.9)}
 
 .contact-link svg.external{width:23px;height:23px;flex:0 0 23px}
 
-/* Keep the botanical stems attached to the wave at every width. */
+/* Refined heading scale and spacing within the botanical wave. */
 @media(min-width:801px){
-.hero-block{transform:translate(-20px,-30px)}
-.plan-block{transform:translateX(-52px)}
-.health-block{transform:translateY(-27px)}
+.hero-block{transform:translate(-44px,-36px)}
+.hero-block h1{font-size:clamp(33px,3.02vw,46px);letter-spacing:-1.2px}
+.plan-block{transform:translateX(-76px)}
+.health-block{transform:translateY(-41px)}
 }
 @media(min-width:801px) and (max-width:1150px){
-.hero-block{transform:translate(-12px,-22px)}
-.plan-block{transform:translateX(-22px)}
+.hero-block{transform:translate(-26px,-28px)}
+.plan-block{transform:translateX(-36px)}
 }
+
+@media(min-width:521px) and (max-width:800px){.hero-block h1{font-size:38px}}
+@media(max-width:520px){.hero-block h1{font-size:clamp(28px,7.7vw,36px)}.wave-sprig{opacity:.35}}
