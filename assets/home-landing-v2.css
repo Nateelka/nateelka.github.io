@@ -53,10 +53,10 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
 .botanical-edge-top { top: 0; left: -27px; transform: rotate(-15deg); opacity: .78; }
 .botanical-edge-bottom { bottom: 49px; right: -45px; width: 132px; transform: scaleX(-1) rotate(-20deg); opacity: .61; }
 .hero-block { grid-area: 1 / 2 / 2 / 8; padding-bottom: 12px; }
-.hero-block h1 { font-size: clamp(36px, 4.2vw, 61px); line-height: 1.03; letter-spacing: -.025em; }
+.hero-block h1 { color: #795749; font-size: clamp(36px, 4.2vw, 61px); line-height: 1.03; letter-spacing: -.025em; }
 .hero-block h1 span { display: block; }
 .green-word { font-style: italic; }
-.hero-block p { max-width: 365px; margin-top: 6px; font-style: italic; color: #46503f; text-wrap: balance; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.35; }
+.hero-block p { max-width: 365px; margin-top: 1px; font-style: italic; color: #63544b; text-wrap: balance; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.35; }
 .plan-block, .health-block { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); }
 .plan-block { grid-area: 2 / 7 / 3 / -1; margin-top: -46px; }
 .health-block { grid-area: 3 / 2 / 4 / 8; margin-top: 15px; }
