@@ -348,3 +348,15 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   }
   .plan-content h2 a::after, .diary-trigger::after { content: ""; position: absolute; inset: 0; cursor: pointer; }
 }
+
+@media (min-width: 681px) {
+  .site-shell { container-type: inline-size; }
+  .page-footer {
+    margin-inline: calc((100% - 100cqw) / 2);
+    padding: 0 112px 44px 14px;
+  }
+  .page-footer .footer-links {
+    margin-inline-start: auto;
+    justify-content: flex-end;
+  }
+}
