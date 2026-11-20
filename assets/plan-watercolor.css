@@ -30,8 +30,12 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
 .feature, .feature:nth-child(even) { border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 16px 0; background: transparent; }
 .feature h3 { font-size: 1.1rem; }
 .feature p { font-size: 1rem; }
-.support-section { width: 100%; margin: 26px 0; background: #e8ecd8; border: 0; border-radius: 20px; }
-.support-button { margin-left: auto; border-radius: 22px; }
+.support-section { width: 100%; margin: 26px 0; background: linear-gradient(115deg, #eaf2ff, #eee7fa); border: 0; border-radius: 20px; }
+.support-section h2 { display: flex; align-items: center; gap: 10px; color: #342e50; }
+.support-mark { width: 34px; height: 34px; flex: none; }
+.support-section p { color: #504b60; }
+.support-button { margin-left: auto; border: 0; border-radius: 22px; background: linear-gradient(115deg, #365ec6, #653aba); color: white; text-decoration: none; }
+.support-button:hover { color: white; text-decoration: underline; }
 @media (min-width: 741px) {
   .wrap { max-width: 900px; }
   .hero {
