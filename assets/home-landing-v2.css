@@ -201,9 +201,14 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .site-stage { max-width: 1200px; padding: 42px 44px 24px; }
   .hero-block h1 { font-size: 46px; }
   .hero-block p { font-size: 17px; max-width: 365px; }
-  .hero-block, .health-block { position: relative; right: clamp(30px, 4vw, 64px); }
+  .hero-block {
+    grid-column: 1 / 7;
+    position: relative;
+    top: -22px;
+    left: calc(84px - max(0px, (100vw - 1200px) / 2));
+  }
   .plan-block { margin-top: -16px; position: relative; left: clamp(24px, 3vw, 44px); }
-  .health-block { margin-top: 43px; }
+  .health-block { position: relative; right: clamp(30px, 4vw, 64px); margin-top: -38px; }
   .support-banner { margin-top: 40px; }
   .plan-block, .health-block { gap: 20px; }
   .wallet-symbol { width: 100px; }
