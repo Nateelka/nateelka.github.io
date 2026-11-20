@@ -15,14 +15,13 @@ body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
 .hero-wallet { display: block; width: 100%; height: auto; justify-self: center; transform: rotate(3deg); }
 .hero .lead { font-size: clamp(1.12rem, 2vw, 1.45rem); color: #655448; font-style: italic; }
 .hero .summary { font-size: 1rem; max-width: 43ch; line-height: 1.5; }
-.downloads { display: grid; width: fit-content; max-width: 100%; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 4px; }
+.downloads { display: grid; width: fit-content; max-width: 100%; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 0; }
 .downloads .store-button { font: 600 .95rem Georgia, serif; min-height: 44px; }
 .downloads .rustore { gap: 9px; padding: 8px 17px 8px 12px; border: 1px solid #b9aea0; border-radius: 24px; background: #fffaf2; color: #493d36; }
 .other-stores { display: flex; flex-wrap: wrap; gap: 0 20px; }
 .downloads .trashbox, .downloads .appteka {
-  background: transparent; color: var(--green); padding: 4px 0; text-decoration: underline; text-underline-offset: .2em;
+  font-weight: 400; background: transparent; color: var(--green); padding: 4px 0; text-decoration: underline; text-underline-offset: .2em;
 }
-.privacy-link { color: var(--muted); font-size: .875rem; }
 main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
 .screenshots-section { padding: clamp(30px, 5vw, 58px) 0; }
 .screenshots { max-width: 900px; gap: clamp(10px, 2vw, 22px); }
@@ -43,9 +42,7 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
   .hero .lead { margin-top: 8px; font-size: 1.2rem; }
   .hero .summary { max-width: 54ch; }
   .hero-install { display: grid; justify-items: center; }
-  .hero .privacy-link { display: none; }
   .downloads { margin-top: 0; gap: 0; }
-  .downloads .other-stores a { font-weight: 400; }
   .screenshots-section { padding-top: 34px; }
 }
 @media (max-width: 740px) {
@@ -60,7 +57,7 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
     height: auto;
   }
   .screenshots {
-    display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(132px, 43%);
+    display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 80%;
     overflow-x: auto; max-width: none; padding: 4px 4px 12px; scroll-snap-type: x proximity;
   }
   .screenshots figure { scroll-snap-align: start; }
