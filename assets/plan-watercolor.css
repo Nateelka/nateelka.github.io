@@ -11,6 +11,7 @@ body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
 .home-link { color: var(--green); font-weight: 400; }
 .hero { padding: 24px 0; }
 .hero h1 { color: #684d3f; font-size: clamp(1.8rem, 4vw, 3.25rem); font-weight: 600; }
+.mobile-wallet-mark { display: none; }
 .hero-wallet { display: block; width: 100%; height: auto; justify-self: center; transform: rotate(3deg); }
 .hero .lead { font-size: clamp(1.12rem, 2vw, 1.45rem); color: #655448; font-style: italic; }
 .hero .summary { font-size: 1rem; max-width: 43ch; line-height: 1.5; }
@@ -51,6 +52,13 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
   .wrap { width: min(90%, 560px); }
   .hero { display: block; padding: 20px 0; }
   .hero-wallet { display: none; }
+  .hero h1 { display: flex; align-items: center; gap: 9px; }
+  .hero .mobile-wallet-mark {
+    display: block;
+    flex: 0 0 auto;
+    width: clamp(38px, 10vw, 46px);
+    height: auto;
+  }
   .screenshots {
     display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(132px, 43%);
     overflow-x: auto; max-width: none; padding: 4px 4px 12px; scroll-snap-type: x proximity;
