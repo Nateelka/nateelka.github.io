@@ -1,11 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 50" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1374 520" preserveAspectRatio="none">
   <defs>
-    <linearGradient id="wash" x1="0" y1="0" x2="0.9" y2="1" gradientUnits="objectBoundingBox">
-      <stop stop-color="#abb99a"/>
-      <stop offset=".52" stop-color="#c8ceb0"/>
-      <stop offset="1" stop-color="#b8c4a5"/>
+    <linearGradient id="sage" x2="100%" y2="32%">
+      <stop stop-color="#719378" stop-opacity=".49"/>
+      <stop offset=".53" stop-color="#b0ba89" stop-opacity=".25"/>
+      <stop offset="1" stop-color="#94a678" stop-opacity=".39"/>
     </linearGradient>
+    <linearGradient id="olive" x2="89%" y2="100%">
+      <stop stop-color="#b8bf8c" stop-opacity=".31"/>
+      <stop offset=".63" stop-color="#a2b276" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#6e936f" stop-opacity=".48"/>
+    </linearGradient>
+    <filter id="paper" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".19" numOctaves="3" seed="7" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="linear" slope=".19"/></feComponentTransfer>
+      <feComposite in2="SourceGraphic" operator="in"/>
+      <feBlend in2="SourceGraphic" mode="multiply"/>
+    </filter>
   </defs>
-  <path fill="url(#wash)" d="M0 17 C78 7 127 37 207 29 S335 6 400 10 V21 C335 17 287 32 207 40 S78 18 0 28 Z"/>
-  <path fill="#889e7e" opacity=".22" d="M0 22 C78 12 127 42 207 34 S335 11 400 15 V21 C335 17 287 32 207 40 S78 18 0 28 Z"/>
+  <g filter="url(#paper)">
+    <path fill="url(#sage)" d="M0 212C200 206 423 335 624 368S850 374 1020 318 1245 312 1374 269V357C1180 344 1015 459 831 475S555 536 403 499 151 318 0 419Z"/>
+    <path fill="url(#olive)" d="M0 304C204 187 399 310 550 306S752 184 947 124 1220 19 1374 36V179C1269 114 1208 79 1071 121C1000 142 932 192 845 229S655 336 550 342C399 346 204 248 0 366Z"/>
+    <path fill="url(#sage)" opacity=".82" d="M0 292C181 214 303 243 458 310S730 455 930 406 1220 307 1374 321V350C1193 337 1076 417 890 442S605 409 444 351 159 239 0 381Z"/>
+  </g>
 </svg>
