@@ -1,0 +1,8 @@
+/* Let the page content determine where the decorative edge begins. */
+html::after {
+  content: "";
+  display: block;
+  height: clamp(16px, 2.2vw, 32px);
+  background: url("footer-wave.svg") center bottom / 100% 100% no-repeat;
+  pointer-events: none;
+}
