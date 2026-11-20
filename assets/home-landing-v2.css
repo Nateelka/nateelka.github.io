@@ -156,8 +156,8 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   gap: 10px 28px;
   margin-top: 48px;
 }
-.brand-name { display: flex; align-items: center; gap: 8px; font-size: clamp(24px, 3vw, 38px); font-weight: bold; }
-.brand-name svg { width: 41px; height: 41px; }
+.brand-name { display: flex; align-items: center; gap: 4px; font: italic 400 clamp(25px, 3vw, 38px)/1.15 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; color: #414c38; }
+.brand-name svg { width: 32px; height: 33px; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 6px 0; font-size: 15px; }
 .footer-links a { padding: 0 13px; text-decoration: none; }
 .footer-links a:first-child { padding-left: 0; }
@@ -281,6 +281,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .donate-copy { grid-area: 1 / 1 / 2 / -1; text-align: center; }
   .donate-heart { grid-column: 1; grid-row: 2; width: clamp(74px, 24vw, 100px); }
   .donate { grid-column: 2; grid-row: 2; padding-inline: 11px; gap: 6px; border-color: #bc8278; }
+  .brand-name { margin-inline-start: calc(6px - 6vw); }
   .footer-links { gap: 8px 16px; }
   .footer-links a { padding-inline: 0; }
   .footer-links a + a { border-left: 0; }
