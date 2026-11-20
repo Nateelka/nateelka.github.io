@@ -49,14 +49,16 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
 }
 @media (max-width: 740px) {
   .wrap { width: min(90%, 560px); }
-  .hero { display: block; padding: 20px 0 0; }
+  .hero { --wallet-width: clamp(38px, 10vw, 46px); --wallet-gap: 9px; display: block; padding: 20px 0 0; }
   .screenshots-section { padding-top: 14px; }
   .hero-wallet { display: none; }
-  .hero h1 { display: flex; align-items: center; gap: 9px; }
+  .hero h1 { display: flex; align-items: center; gap: var(--wallet-gap); }
+  .hero .lead { margin: 1px 0 0 calc(var(--wallet-width) + var(--wallet-gap)); font-size: 1.05rem; line-height: 1.25; }
+  .hero .summary { margin-top: 12px; color: #404737; }
   .hero .mobile-wallet-mark {
     display: block;
     flex: 0 0 auto;
-    width: clamp(38px, 10vw, 46px);
+    width: var(--wallet-width);
     height: auto;
   }
   .screenshots {
