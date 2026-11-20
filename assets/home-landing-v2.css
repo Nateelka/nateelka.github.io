@@ -307,12 +307,13 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
 @media (max-width: 680px) {
   .app-pair {
     position: relative; isolation: isolate; display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
-    gap: 10px; width: min(100%, 420px); align-self: center; margin: 34px auto 32px;
+    gap: 14px; padding-inline: clamp(0px, calc(15vw - 48px), 21px); width: min(100%, 420px); align-self: center; margin: 34px auto 32px;
   }
   .app-pair section {
     grid-area: auto;
     position: relative; display: flex; flex-direction: column; align-items: stretch;
     gap: 0; min-width: 0; margin: 0; padding: 0 0 12px; text-align: center;
+    min-height: 12rem;
     container-type: inline-size;
     --icon-wash: #e1e6bd;
     border: 0; border-radius: 14px; overflow: hidden;
