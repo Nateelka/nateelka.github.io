@@ -313,6 +313,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     grid-area: auto;
     position: relative; display: flex; flex-direction: column; align-items: stretch;
     gap: 0; min-width: 0; margin: 0; padding: 0 0 12px; text-align: center;
+    container-type: inline-size;
     --icon-wash: #e1e6bd;
     border: 0; border-radius: 14px; overflow: hidden;
     background: radial-gradient(ellipse 68% 48% at 50% 26%, var(--icon-wash) 8%, transparent 100%), #fff8ec;
@@ -324,8 +325,11 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     padding: 12px; background: transparent;
   }
   .app-pair .health-block { --icon-wash: #f9d8b6; }
-  .app-pair h2 { font-size: clamp(17px,4.6vw,21px); margin: 10px 5px 0; line-height: 1.12; }
-  .app-pair .health-title { display: grid; justify-items: center; gap: 6px; }
+  .app-pair h2 {
+    font-size: clamp(.85rem, 9.4cqi, 1.15rem);
+    letter-spacing: -.025em; line-height: 1.2; margin: 10px 3px 0;
+  }
+  .app-pair .health-title { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 6px; }
   .app-pair .card-summary { display: block; margin: 6px 8px 0; font-size: 15px; line-height: 1.22; }
   .app-pair .full-summary, .health-content p, .desktop-health-name, .plan-content h2 span { display: none; }
   .diary-trigger { display: inline; padding: 0; border: 0; background: transparent; font: inherit; color: inherit; }
