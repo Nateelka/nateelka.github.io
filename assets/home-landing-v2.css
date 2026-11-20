@@ -196,3 +196,22 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .footer-links { font-size: 13px; }
   .footer-links a { padding-inline: 7px; }
 }
+
+@media (min-width: 1121px) {
+  .site-stage { max-width: 1200px; padding: 42px 44px 24px; }
+  .hero-block h1 { font-size: 46px; }
+  .hero-block p { font-size: 17px; max-width: 365px; }
+  .plan-block { margin-top: -16px; }
+  .plan-block, .health-block { gap: 20px; }
+  .wallet-symbol { width: 100px; }
+  .health-icon { width: 80px; }
+  .plan-content h2, .health-title h2 { font-size: 29px; }
+  .about-block h2 { font-size: 34px; }
+  .developer-illustration { max-width: 480px; }
+  .wave-main { height: 415px; }
+  .botanical-edge-top { width: 132px; }
+  .donate-heart { width: 145px; }
+  .donate-copy strong { font-size: 24px; }
+  .donate, .contact-link { font-size: 18px; }
+  .brand-name { font-size: 29px; }
+}
