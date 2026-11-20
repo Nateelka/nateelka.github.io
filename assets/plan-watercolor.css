@@ -67,3 +67,64 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
   .support-section { display: grid; gap: 12px; }
   .support-button { justify-self: start; margin: 0; white-space: normal; }
 }
+
+.page-footer {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: 100%;
+  max-width: none;
+  min-height: 196px;
+  padding: 40px 112px 26px 14px;
+  border: 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  align-content: flex-end;
+  justify-content: space-between;
+  gap: 14px 28px;
+  color: #252d21;
+}
+.page-footer .wave-bottom, .page-footer::before {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+}
+.page-footer .wave-bottom { inset: auto 0 0; width: 100%; height: 144px; }
+.page-footer::before {
+  content: "";
+  right: -45px;
+  bottom: 49px;
+  width: 132px;
+  aspect-ratio: 1;
+  background: url("home-watercolor-sprig.webp") center / contain no-repeat;
+  transform: scaleX(-1) rotate(-20deg);
+  opacity: .61;
+}
+.page-footer .brand-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #414c38;
+  font: italic 400 clamp(25px, 3vw, 38px)/1.15 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
+}
+.brand-name svg { width: 32px; height: 33px; }
+.page-footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-end;
+  gap: 6px 0;
+  margin-block-end: 5px;
+  font: 15px/1.5 Georgia, serif;
+}
+.page-footer .footer-links a { padding-inline: 13px; color: inherit; white-space: nowrap; }
+.page-footer .footer-links a + a { border-left: 1px solid #7b826a; }
+.page-footer .footer-links a:last-child { padding-right: 0; }
+@media (max-width: 740px) {
+  .page-footer { flex-direction: column; align-items: flex-start; align-content: stretch; justify-content: flex-end; padding: 40px 8px 20px; }
+  .page-footer::before { bottom: 60px; width: 98px; opacity: .23; }
+  .page-footer .brand-name { font-size: 29px; }
+  .page-footer .footer-links { width: 100%; justify-content: space-evenly; gap: 4px 10px; font-size: 13px; }
+  .page-footer .footer-links a { padding: 5px 0; }
+  .page-footer .footer-links a + a { border: 0; }
+}
