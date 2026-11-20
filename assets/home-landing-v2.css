@@ -191,7 +191,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     pointer-events: none;
     inset: auto -6.82% -54px;
     height: 50px;
-    background: url("home-watercolor-wave.svg") center / 100% 100% no-repeat;
+    background: url("home-mobile-wave.svg") center / 100% 100% no-repeat;
     opacity: .86;
   }
   .plan-content h2, .health-title h2 { font-size: 24px; }
