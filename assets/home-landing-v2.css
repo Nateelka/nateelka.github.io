@@ -195,7 +195,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     opacity: .55;
   }
   .plan-content h2, .health-title h2 { font-size: 24px; }
-  .about-block h2 { font-size: 26px; }
+  .about-block h2 { font: italic 400 26px/1.1 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; color: #414c38; }
   .plan-content::after, .health-content::after { content: none; }
   .about-block { margin-top: 35px; }
   .developer-illustration { width: min(100%, 475px); align-self: center; margin: 13px 0 0; }
