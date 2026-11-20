@@ -24,7 +24,7 @@ body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
   font-weight: 400; background: transparent; color: var(--green); padding: 4px 0; text-decoration: underline; text-underline-offset: .2em;
 }
 main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
-.screenshots-section .gallery-caption { margin: 0 0 6px; color: #784f3e; font: 600 1.125rem/1.3 Georgia, serif; }
+.screenshots figcaption { margin: 0 0 8px; color: #62564a; font: 400 .875rem/1.4 system-ui, sans-serif; }
 .screenshots-section { padding: clamp(30px, 5vw, 58px) 0; }
 .screenshots { max-width: 900px; gap: clamp(10px, 2vw, 22px); }
 .feature-grid { gap: 0 22px; }
