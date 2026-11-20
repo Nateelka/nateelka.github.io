@@ -19,11 +19,10 @@ body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
   background: radial-gradient(ellipse at 85% 45%, #d5dfba, transparent 57%), #f1edda;
 }
 .hero h1 { color: #684d3f; font-size: clamp(1.8rem, 4vw, 3.25rem); font-weight: 600; }
-.hero .app-icon { width: 40px; height: 40px; border-radius: 10px; }
 .hero-wallet { display: block; width: min(88%, 195px); height: auto; justify-self: center; transform: rotate(3deg); }
 .hero .lead { font-size: clamp(1.12rem, 2vw, 1.45rem); color: #655448; font-style: italic; }
 .hero .summary { font-size: 1rem; max-width: 43ch; line-height: 1.5; }
-.downloads { display: grid; grid-template-columns: 1fr; justify-items: start; gap: 4px; }
+.downloads { display: grid; width: fit-content; max-width: 100%; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 4px; }
 .downloads .store-button { font: 600 .95rem Georgia, serif; min-height: 44px; }
 .downloads .rustore { gap: 9px; padding: 8px 17px 8px 12px; border: 1px solid #b9aea0; border-radius: 24px; background: #fffaf2; color: #493d36; }
 .other-stores { display: flex; flex-wrap: wrap; gap: 0 20px; }
@@ -60,8 +59,6 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
   .wrap { width: min(90%, 560px); }
   .hero { display: block; padding: 20px 16px; }
   .hero-wallet { display: none; }
-  .title-row { gap: 10px; }
-  .hero .app-icon { width: 36px; height: 36px; }
   .screenshots {
     display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(132px, 43%);
     overflow-x: auto; max-width: none; padding: 4px 4px 12px; scroll-snap-type: x proximity;
