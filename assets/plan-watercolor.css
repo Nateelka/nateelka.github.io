@@ -11,7 +11,7 @@ body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
 .home-link { color: var(--green); font-weight: 400; }
 .hero { padding: 24px 0; }
 .hero h1 { color: #684d3f; font-size: clamp(1.8rem, 4vw, 3.25rem); font-weight: 600; }
-.hero-wallet { display: block; width: 128px; height: auto; justify-self: center; transform: rotate(3deg); }
+.hero-wallet { display: block; width: 100%; height: auto; justify-self: center; transform: rotate(3deg); }
 .hero .lead { font-size: clamp(1.12rem, 2vw, 1.45rem); color: #655448; font-style: italic; }
 .hero .summary { font-size: 1rem; max-width: 43ch; line-height: 1.5; }
 .downloads { display: grid; width: fit-content; max-width: 100%; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 4px; }
@@ -34,7 +34,7 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
 @media (min-width: 741px) {
   .wrap { max-width: 900px; }
   .hero {
-    grid-template-columns: minmax(0, 1fr) minmax(215px, 32%);
+    grid-template-columns: minmax(0, 1fr) clamp(76px, 9vw, 116px) max-content;
     gap: 24px;
     padding: 24px 0 32px;
   }
@@ -43,7 +43,7 @@ main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
   .hero .summary { max-width: 54ch; }
   .hero-install { display: grid; justify-items: center; }
   .hero .privacy-link { display: none; }
-  .downloads { margin-top: 14px; gap: 0; }
+  .downloads { margin-top: 0; gap: 0; }
   .downloads .other-stores a { font-weight: 400; }
   .screenshots-section { padding-top: 34px; }
 }
