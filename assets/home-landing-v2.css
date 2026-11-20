@@ -313,14 +313,17 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     grid-area: auto;
     position: relative; display: flex; flex-direction: column; align-items: stretch;
     gap: 0; min-width: 0; margin: 0; padding: 0 0 12px; text-align: center;
-    border: 1px solid #bcc1a3; border-radius: 14px; overflow: hidden; background: #fff8ec;
+    --icon-wash: #e1e6bd;
+    border: 0; border-radius: 14px; overflow: hidden;
+    background: radial-gradient(ellipse 68% 48% at 50% 26%, var(--icon-wash) 8%, transparent 100%), #fff8ec;
+    box-shadow: 0 2px 8px rgb(93 69 35 / 9%);
   }
   .app-pair section:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
   .app-pair img {
     width: 100%; height: auto; aspect-ratio: 1.5; object-fit: contain;
-    padding: 12px; background: #e3e7cb;
+    padding: 12px; background: transparent;
   }
-  .app-pair .health-icon { background: #f9dfc5; }
+  .app-pair .health-block { --icon-wash: #f9d8b6; }
   .app-pair h2 { font-size: clamp(17px,4.6vw,21px); margin: 10px 5px 0; line-height: 1.12; }
   .app-pair .health-title { display: grid; justify-items: center; gap: 6px; }
   .app-pair .card-summary { display: block; margin: 6px 8px 0; font-size: 15px; line-height: 1.22; }
