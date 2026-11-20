@@ -257,7 +257,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     margin-top: 20px;
     align-self: center;
     width: min(94%, 365px);
-    padding-inline: clamp(10px, 3vw, 18px);
+    padding: 18px clamp(10px, 3vw, 18px);
     grid-template-columns: max-content max-content;
     justify-content: center;
     gap: 22px 8px;
@@ -266,7 +266,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .support-banner .mobile-label { display: inline; }
   .donate-copy { grid-area: 1 / 1 / 2 / -1; text-align: center; }
   .donate-heart { grid-column: 1; grid-row: 2; width: clamp(74px, 24vw, 100px); }
-  .donate { grid-column: 2; grid-row: 2; border-color: #bc8278; }
+  .donate { grid-column: 2; grid-row: 2; padding-inline: 11px; gap: 6px; border-color: #bc8278; }
   .footer-links { gap: 8px 16px; }
   .footer-links a { padding-inline: 0; }
   .footer-links a + a { border-left: 0; }
