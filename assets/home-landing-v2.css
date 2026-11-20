@@ -108,6 +108,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   width: clamp(86px, 15vw, 196px);
   height: auto;
 }
+.support-banner .mobile-label { display: none; }
 .donate-copy { display: grid; line-height: 1.25; gap: 3px; }
 .donate-copy strong { font-size: clamp(20px, 2.35vw, 31px); }
 .donate-copy > span { color: #594838; font-size: 15px; }
@@ -246,7 +247,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     gap: 8px 12px;
   }
   .wallet-symbol, .health-icon { width: clamp(42px, 11vw, 54px); }
-  .plan-content, .health-content, .donate-copy { display: contents; }
+  .plan-content, .health-content { display: contents; }
   .plan-content p, .health-content p,
   .plan-content::after, .health-content::after {
     grid-column: 1 / -1;
@@ -254,12 +255,14 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   }
   .support-banner {
     margin-top: 20px;
-    grid-template-columns: 36px minmax(0, 1fr);
+    grid-template-columns: auto minmax(0, 1fr);
     gap: 8px;
   }
-  .donate-heart { width: 36px; }
-  .donate-copy > span, .donate { grid-column: 1 / -1; }
-  .donate { margin-top: 4px; }
+  .support-banner .wide-label { display: none; }
+  .support-banner .mobile-label { display: inline; }
+  .donate-copy { grid-area: 1 / 1 / 2 / -1; }
+  .donate-heart { grid-column: 1; grid-row: 2; width: clamp(56px, 18vw, 82px); }
+  .donate { grid-column: 2; grid-row: 2; }
   .footer-links { gap: 8px 16px; }
   .footer-links a { padding-inline: 0; }
   .footer-links a + a { border-left: 0; }
