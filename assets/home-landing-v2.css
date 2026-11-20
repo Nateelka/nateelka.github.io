@@ -342,10 +342,9 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .site-shell { container-type: inline-size; }
   .page-footer {
     margin-inline: calc((100% - 100cqw) / 2);
-    padding: 0 112px 44px 14px;
+    padding: 40px 112px 4px 14px;
   }
   .page-footer .footer-links {
-    transform: translateY(40px);
     margin-inline-start: auto;
     justify-content: flex-end;
   }
