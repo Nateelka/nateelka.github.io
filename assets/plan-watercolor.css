@@ -1,0 +1,56 @@
+:root {
+  --bg: #fcf4e8;
+  --ink: #293120;
+  --muted: #505749;
+  --line: #dedecb;
+  --green: #415a39;
+}
+body { font: 1rem/1.5 Georgia, 'Times New Roman', serif; }
+.wrap { max-width: 1040px; }
+.topbar { min-height: 54px; border: 0; }
+.home-link { color: var(--green); font-weight: 400; }
+.hero {
+  position: relative;
+  isolation: isolate;
+  grid-template-columns: minmax(0, 1.4fr) minmax(150px, .7fr);
+  gap: 32px;
+  padding: clamp(22px, 4vw, 48px);
+  border-radius: 26px;
+  background: radial-gradient(ellipse at 85% 45%, #d5dfba, transparent 57%), #f1edda;
+}
+.hero h1 { color: #684d3f; font-size: clamp(1.8rem, 4vw, 3.25rem); font-weight: 600; }
+.hero .app-icon { width: 40px; height: 40px; border-radius: 10px; }
+.hero-wallet { display: block; width: min(88%, 195px); height: auto; justify-self: center; transform: rotate(3deg); }
+.hero .lead { font-size: clamp(1.12rem, 2vw, 1.45rem); color: #655448; font-style: italic; }
+.hero .summary { font-size: 1rem; max-width: 43ch; line-height: 1.5; }
+.downloads { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; }
+.downloads .store-button { font: 600 .95rem Georgia, serif; min-height: 44px; }
+.downloads .rustore { padding: 10px 18px; border-radius: 24px; background: #435c37; }
+.downloads .trashbox, .downloads .appteka {
+  background: transparent; color: var(--green); padding: 4px 0; text-decoration: underline; text-underline-offset: .2em;
+}
+.privacy-link { color: var(--muted); font-size: .875rem; }
+main h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); color: #3e4d36; }
+.screenshots-section { padding: clamp(30px, 5vw, 58px) 0; }
+.screenshots { max-width: 900px; gap: clamp(10px, 2vw, 22px); }
+.feature-grid { gap: 0 22px; }
+.feature, .feature:nth-child(even) { border: 0; border-top: 1px solid var(--line); border-radius: 0; padding: 16px 0; background: transparent; }
+.feature h3 { font-size: 1.1rem; }
+.feature p { font-size: 1rem; }
+.support-section { width: 100%; margin: 26px 0; background: #e8ecd8; border: 0; border-radius: 20px; }
+.support-button { margin-left: auto; border-radius: 22px; }
+@media (max-width: 740px) {
+  .wrap { width: min(90%, 560px); }
+  .hero { display: block; padding: 20px 16px; }
+  .hero-wallet { display: none; }
+  .title-row { gap: 10px; }
+  .hero .app-icon { width: 36px; height: 36px; }
+  .downloads { gap: 0 12px; }
+  .screenshots {
+    display: grid; grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: minmax(132px, 43%);
+    overflow-x: auto; max-width: none; padding: 4px 4px 12px; scroll-snap-type: x proximity;
+  }
+  .screenshots figure { scroll-snap-align: start; }
+  .support-section { display: grid; gap: 12px; }
+  .support-button { justify-self: start; margin: 0; white-space: normal; }
+}
