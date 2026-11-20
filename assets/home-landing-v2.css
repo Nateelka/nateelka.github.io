@@ -282,7 +282,13 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .donate-heart { grid-column: 1; grid-row: 2; width: clamp(74px, 24vw, 100px); }
   .donate { grid-column: 2; grid-row: 2; padding-inline: 11px; gap: 6px; border-color: #bc8278; }
   .brand-name { margin-inline-start: calc(6px - 6vw); }
-  .footer-links { gap: 8px 16px; }
-  .footer-links a { padding-inline: 0; }
+  .footer-links {
+    flex: 0 0 calc(100% + 12vw - 16px);
+    margin-inline: calc(8px - 6vw);
+    justify-content: space-evenly;
+    gap: 4px;
+    font-size: clamp(11px, 3.25vw, 13px);
+  }
+  .footer-links a { padding: 6px 0; white-space: nowrap; }
   .footer-links a + a { border-left: 0; }
 }
