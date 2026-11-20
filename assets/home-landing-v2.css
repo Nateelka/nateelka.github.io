@@ -56,7 +56,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
 .hero-block h1 { font-size: clamp(36px, 4.2vw, 61px); line-height: 1.03; letter-spacing: -.025em; }
 .hero-block h1 span { display: block; }
 .green-word { font-style: italic; }
-.hero-block p { max-width: 410px; margin-top: 16px; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.35; }
+.hero-block p { max-width: 365px; margin-top: 6px; font-style: italic; color: #46503f; text-wrap: balance; font-size: clamp(16px, 1.45vw, 20px); line-height: 1.35; }
 .plan-block, .health-block { display: flex; align-items: center; gap: clamp(12px, 2vw, 28px); }
 .plan-block { grid-area: 2 / 7 / 3 / -1; margin-top: -46px; }
 .health-block { grid-area: 3 / 2 / 4 / 8; margin-top: 15px; }
@@ -175,14 +175,27 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .botanical-edge-top { left: auto; right: -30px; transform: scaleX(-1); }
 }
 @media (max-width: 680px) {
-  .site-stage { display: flex; flex-direction: column; align-items: stretch; padding: 30px 6% 24px; }
+  .site-stage { display: flex; flex-direction: column; align-items: stretch; padding: 16px 6% 24px; }
   .hero-block { padding: 0; }
   .hero-block h1 { font-size: clamp(30px, 8.3vw, 48px); max-width: 94%; }
-  .hero-block p { margin-top: 12px; }
   .plan-block, .health-block { margin-top: 25px; padding: 0; align-items: flex-start; }
   .wallet-symbol, .health-icon { width: clamp(65px, 16vw, 90px); flex: none; }
   .plan-content p, .health-content p, .about-block p { font-size: 16px; }
-  .wave-main { top: 135px; height: 325px; }
+  .plan-block { margin-top: 45px; position: relative; isolation: isolate; }
+  .wave-main { display: none; }
+  .plan-block::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    pointer-events: none;
+    inset: auto -6.82% -58px;
+    height: 100px;
+    background: url("home-watercolor-wave.svg") center / 100% 100% no-repeat;
+    opacity: .55;
+  }
+  .plan-content h2, .health-title h2 { font-size: 24px; }
+  .about-block h2 { font-size: 26px; }
+  .plan-content::after, .health-content::after { content: none; }
   .about-block { margin-top: 35px; }
   .developer-illustration { width: min(100%, 475px); align-self: center; margin: 13px 0 0; }
   .support-banner { grid-template-columns: auto minmax(0, 1fr); border-radius: 26px; }
