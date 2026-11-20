@@ -189,10 +189,10 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     position: absolute;
     z-index: -1;
     pointer-events: none;
-    inset: auto -6.82% -42px;
-    height: 40px;
+    inset: auto -6.82% -54px;
+    height: 50px;
     background: url("home-watercolor-wave.svg") center / 100% 100% no-repeat;
-    opacity: .55;
+    opacity: .86;
   }
   .plan-content h2, .health-title h2 { font-size: 24px; }
   .about-block h2 { font: italic 400 26px/1.1 "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif; color: #414c38; }
@@ -307,7 +307,7 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
 @media (max-width: 680px) {
   .app-pair {
     position: relative; isolation: isolate; display: grid; grid-template-columns: repeat(2,minmax(0,1fr));
-    gap: 10px; width: min(100%, 420px); align-self: center; margin: 34px auto 20px;
+    gap: 10px; width: min(100%, 420px); align-self: center; margin: 34px auto 32px;
   }
   .app-pair section {
     grid-area: auto;
