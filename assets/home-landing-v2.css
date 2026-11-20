@@ -257,10 +257,12 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
     margin-top: 20px;
     align-self: center;
     width: min(94%, 365px);
-    padding: 18px clamp(10px, 3vw, 18px);
+    padding: 12px clamp(10px, 3vw, 18px) 24px;
+    background-position: center bottom, center;
+    background-size: 100% 24px, cover;
     grid-template-columns: max-content max-content;
     justify-content: center;
-    gap: 22px 8px;
+    gap: 28px 8px;
   }
   .support-banner .wide-label { display: none; }
   .support-banner .mobile-label { display: inline; }
