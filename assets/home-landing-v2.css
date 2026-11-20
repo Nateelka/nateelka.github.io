@@ -202,7 +202,19 @@ a:focus-visible { outline: 2px solid #774939; outline-offset: 5px; }
   .support-banner { grid-template-columns: auto minmax(0, 1fr); border-radius: 26px; }
   .donate-heart { width: clamp(65px, 21vw, 115px); }
   .donate { grid-column: 2; justify-self: start; }
-  .links-strip { flex-direction: column; align-items: flex-start; gap: 8px; margin-top: 32px; }
+  .links-strip {
+    display: grid;
+    align-self: center;
+    width: max-content;
+    max-width: 100%;
+    justify-content: stretch;
+    gap: 2px;
+    margin-top: 32px;
+  }
+  .contact-link {
+    display: grid;
+    grid-template-columns: 28px minmax(0, 1fr) 14px;
+  }
   .contact-link svg { width: 28px; height: 28px; }
   .contact-link svg.external { width: 14px; height: 14px; }
   .botanical-edge-top { opacity: .27; }
